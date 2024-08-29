@@ -1,7 +1,7 @@
 function copyEmail(event) {
     event.preventDefault(); // Prevent the default link behavior
 
-    const email = 'duologueenglishcox@gmail.com';
+    const email = 'asifahammed1970@gmail.com';
 
     // Use the modern Clipboard API to copy the email
     navigator.clipboard.writeText(email).then(() => {

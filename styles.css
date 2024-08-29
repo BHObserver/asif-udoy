@@ -1,14 +1,14 @@
 /* Importing a smooth font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=SUSE:wght@100..800&display=swap" rel="stylesheet');
 
 * {
     outline: none;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;            
-    background: linear-gradient(to bottom, rgba(12, 10, 110, 0.3), rgba(121, 10, 10, 0.3)), url("./img/bg.png") no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;            
+    background: linear-gradient(to bottom, rgba(63, 62, 74, 0.3), rgba(160, 157, 201, 0.3)), url("./img/bg.jpg") no-repeat center center/cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@ body.blurred .container{
 }
 
 .container h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 @keyframes fadeIn {
@@ -58,7 +58,7 @@ body.blurred .container{
 }
 
 .profile-card {
-    background: linear-gradient(to bottom, rgba(12, 10, 110, 0.2), rgba(121, 10, 10, 0.2));
+    background: linear-gradient(to bottom, rgba(83, 83, 92, 0.2), rgba(158, 139, 139, 0.2));
     text-align: center;
     padding: 40px 30px;
     margin: 0 10px;
@@ -66,9 +66,6 @@ body.blurred .container{
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 400px;
-    transform: translateY(100px);
-    animation: slideUp 1s ease-in-out forwards;
-    color: #86031E;
 }
 
 @keyframes slideUp {
@@ -84,20 +81,11 @@ body.blurred .container{
     margin-bottom: 20px;
     object-fit: cover;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    animation: fadeInImage 1.5s ease-in-out forwards, pulse 2s infinite;
-    animation-delay: 0.5s;
 }
 
 @keyframes fadeInImage {
     0% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
 }
 
 .name {
@@ -163,7 +151,7 @@ body.blurred .container{
 
 .social-links a {
     text-decoration: none;
-    background: linear-gradient(45deg, rgba(35, 8, 89, 0.6), rgba(225, 48, 108, 0.6));
+    background: linear-gradient(45deg, rgba(41, 73, 125, 0.6), rgba(142, 57, 105, 0.6));
     color: rgba(255, 255, 255, 0.9);
     padding: 12px 25px;
     border: none;
@@ -259,29 +247,30 @@ body.blurred .container{
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 1002;
+    overflow: hidden;
 }
 
 .popup-content {
-    background-color: #FFFFFF;
+    background: linear-gradient(to bottom, rgba(63, 62, 74, 0.3), rgba(160, 157, 201, 0.3)), url("./img/bg-3.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 30px 40px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    color: #86031E;
+    color: rgb(233, 211, 171);
     position: relative;
     max-width: 500px;
     width: 80%;
+    height: 60%;
 }
 
 .popup-content h2 {
     margin: 0 0 15px;
-    font-size: 24px;
-    color: #86031E;
-}
-
-.popup-content p {
-    font-size: 18px;
-    color: #333333;
+    font-size: 2rem;
+    color: rgb(229, 223, 213);
+    text-shadow: 1px 1px 1px #000;
 }
 
 .close-btn {
@@ -290,12 +279,12 @@ body.blurred .container{
     right: 15px;
     font-size: 28px;
     font-weight: bold;
-    color: #86031E;
+    color: #ffffff;
     cursor: pointer;
 }
 
 .close-btn:hover {
-    color: #5A0212;
+    color: #dbadb6;
 }
 
 .popup.show {
@@ -335,8 +324,7 @@ body.blurred .container{
     width: 270px;
     height: 95%;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);;
-    /* background: linear-gradient(to bottom,  rgba(121, 10, 10, 1), rgba(12, 10, 110, 1)); */
-    background: linear-gradient(to bottom, rgba(12, 10, 110, 0.2), rgba(121, 10, 10, 0.2));
+    background: linear-gradient(to bottom, rgba(110, 50, 10, 0.2), rgba(121, 10, 10, 0.2));
     padding-top: 60px;
     transition: left 0.3s ease;
     z-index: 999;
