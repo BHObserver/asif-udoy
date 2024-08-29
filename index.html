@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duologue English Pavilion</title>
+    <link rel="icon" type="image/x-icon" href="/img/prof.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="overlay" class="overlay"></div>
+    
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- Footer Inside Navigation -->
+        <div class="side-nav-footer">
+            <p> © 2024 Duologue English Pavilion <br>All rights reserved</p>
+            <p>Created by <a href="https://techriverine.com" target="_blank" class="footer-link">TechRiverine</a></p>
+
+        </div>
+    </nav>
+
+    <main>
+        <div id="welcomePopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" id="closePopup">&times;</span>
+                <h2>Welcome to Duologue English Pavilion!</h2>
+                <p>
+                    As a proud partner of the British Council, located in the heart of Cox's Bazar, we are your dedicated registration center for the IELTS exam.
+                </p>
+                <p>
+                    Explore our comprehensive IELTS and English language courses designed to help you achieve your language goals.
+                </p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="profile-card">
+                <img src="./img/prof.png" alt="Profile Image" class="profile-image">
+                <h1 class="name">Duologue English Pavilion</h1>
+                <p class="title">A Thriving Language Centre</p>
+                <div class="contact-icons">
+                    <a href="#" class="icon email" title="Copy Email" onclick="copyEmail(event)">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/email-sign.png" alt="Email Icon">
+                    </a>                
+                    <a href="#" class="icon website" title="Website" onclick="showUnderConstruction(event)">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/internet.png" alt="Website Icon">
+                    </a>
+                </div>
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/duologue_englishpavilion/" class="instagram">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/duologuecox/" class="facebook">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/@DuologueEP.BritishCouncil" class="youtube">YouTube</a></li>
+                    <li><a href="https://wa.me/8801309269589" class="whatsapp">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
